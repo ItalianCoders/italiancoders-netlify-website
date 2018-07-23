@@ -1,7 +1,7 @@
 backend:
   name: github
   branch: master
-  repo: andreasonny83/italiancoders-netlify-website
+  repo: ItalianCoders/italiancoders-netlify-website
   base_url: https://italiancoders-netlify-auth.now.sh
   auth_endpoint: auth
 
@@ -14,6 +14,7 @@ collections:
   - name: "blog"
     label: "Blog"
     folder: "src/pages/blog"
+    slug: "{{slug}}"
     create: true
     fields:
     - {label: "Title", name: "title", widget: "string"}

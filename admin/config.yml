@@ -8,13 +8,12 @@ backend:
 publish_mode: editorial_workflow
 
 media_folder: static/img
-public_folder: "/img"
+public_folder: "public/img"
 
 collections:
   - name: "blog"
     label: "Blog"
     folder: "src/pages/blog"
-    slug: {{name}}
     create: true
     fields:
     - {label: "Title", name: "title", widget: "string"}
